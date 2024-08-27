@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Agung Kresna">
+	<title>Agung Kresna</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!--loader-->
+	<div class="bg-loader">
+		<div class="loader"></div>
+	</div>
+
+	<!-- header -->
+	<div class="medsos">
+		<div class="container">
+			<ul>
+				<li><a href="https://www.facebook.com/ajunk.kresna/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCw0_JqaYt5P4g9ggQwUDn9w" target="_blank"><i class="fab fa-youtube"></i></a></li>
+				<li><a href="https://www.instagram.com/kresna_agung11/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<header>
+		<div class="container">
+			<h1>
+				<link rel="stylesheet" type="text/css" href="css/sidenav.css">
+				<div id="mySidenav" class="sidenav">
+  					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  					<a href="login_page.html">Login</a>
+				</div>
+
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+				<script>
+				function openNav() {
+  				document.getElementById("mySidenav").style.width = "250px";
+				}
+
+				function closeNav() {
+  				document.getElementById("mySidenav").style.width = "0";
+				}
+				</script>
+			</h1>
+			<h1>AGUNG</h1>
+			<ul>
+				<li class="active"><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="service.html">SERVICE</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+	</header>
+	<!--banner-->
+	<section class="banner">
+		<h2>WELCOME TO MY WEBSITE</h2>
+	</section>
+
+	<!--about-->
+	<section class="about">
+		<div class="container">
+			<h3>ABOUT</h3>
+			<p>Agung Kresna is a director of <strong>Game Publisher</strong>, with experience managing global teams and multi-million-dollar campaigns. His background in brand strategy, visual design, and account management inform his mindful but competitive approach.</p>
+		</div>
+	</section>
+
+	<!--service-->
+	<section class="service">
+		<div class="container">
+			<h3>SERVICE</h3>
+			<div class="box">
+				<div class="col-4">
+					<div class="icon"><i class="fas fa-mobile-alt"></i></div>
+					<h4>MOBILE APP</h4>
+				</div>
+				<div class="col-4">
+					<div class="icon"><i class="fas fa-globe"></i></div>
+					<h4>WEB DEVELOPMENT</h4>
+				</div>
+				<div class="col-4">
+					<div class="icon"><i class="fas fa-edit"></i></div>
+					<h4>DESIGN</h4>
+				</div>
+				<div class="col-4">
+					<div class="icon"><a href="game.html"> <i class="fas fa-gamepad"></a></i></div>
+					<h4>GAME</h4>
+				</div>
+				<div class="col-4">
+					<div class="icon"><i class="far fa-file-code"></i></div>
+					<h4>PROJECT</h4>
+				</div>
+				<div class="col-4">
+					<div class="icon"><i class="fas fa-chart-bar"></i></div>
+					<h4>FINANCE</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--footer-->
+	<footer>
+		<div class="container">
+			<small>Copyright &copy; 2021 - Agung Kresna. All Rights Reserved.</small>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".bg-loader").hide();
+		})
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Agung Kresna</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!--loader-->
+	<div class="bg-loader">
+		<div class="loader"></div>
+	</div>
+
+	<!-- header -->
+	<div class="medsos">
+		<div class="container">
+			<ul>
+				<li><a href="https://www.facebook.com/ajunk.kresna/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCw0_JqaYt5P4g9ggQwUDn9w" target="_blank"><i class="fab fa-youtube"></i></a></li>
+				<li><a href="https://www.instagram.com/kresna_agung11/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<header>
+		<div class="container">
+			<h1><a href="home.html">AGUNG</a></h1>
+			<ul>
+				<li><a href="home.html">HOME</a></li>
+				<li class="active"><a href="about.html">ABOUT</a></li>
+				<li><a href="service.html">SERVICE</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+	</header>
+
+    <!--label-->
+    <section class="label">
+        <div class="container">
+            <p>Home / About</p>
+        </div>
+    </section>
+
+	<!--about-->
+	<section class="about">
+		<div class="container">
+            <div>
+            	<link rel="stylesheet" type="text/css" href="css/modal_img.css">
+            <img id="myImg" src="img/aboutbann.jpg" style="width: 100%; max-width: 300px;">
+            <!--The Modal-->
+            <div id="myModal" class="modal">
+            	<span class="close">&times;</span>
+            	<img class="modal-content" id="img01">
+            	<div id="caption"></div>
+            </div>
+
+            <script>
+            	var modal = document.getElementById("myModal");
+            	var img = document.getElementById("myImg");
+            	var modalImg = document.getElementById("img01");
+            	var captionText = document.getElementById("caption");
+            	img.onclick = function() {
+            		modal.style.display = "block";
+            		modalImg.src = this.src;
+            		captionText.innerHTML = this.alt;
+            	}
+
+            	var span = document.getElementsByClassName("close")[0];
+
+            	span.onclick = function() {
+            		modal.style.display = "none";
+            	}
+            </script>
+        	</div>
+
+			<h3>ABOUT</h3>
+			<p>Agung Kresna is a director of <strong>Game Publisher</strong>, with experience managing global teams and multi-million-dollar campaigns. His background in brand strategy, visual design, and account management inform his mindful but competitive approach.</p>
+            <h3>VISION</h3>
+            <p>My vision is to become a well-known and successful <b>Game Developer</b></p>
+            <h3>MISSION</h3>
+            <p>My mission is to <b>make games</b> with <b>good quality</b> and can compete in the world market</p>
+		</div>
+	</section>
+
+	<!--footer-->
+	<footer>
+		<div class="container">
+			<small>Copyright &copy; 2021 - Agung Kresna. All Rights Reserved.</small>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".bg-loader").hide();
+		})
+	</script>
+
+</body>
+</html>

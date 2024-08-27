@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Agung Kresna</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!--loader-->
+	<div class="bg-loader">
+		<div class="loader"></div>
+	</div>
+
+	<!-- header -->
+	<div class="medsos">
+		<div class="container">
+			<ul>
+				<li><a href="https://www.facebook.com/ajunk.kresna/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCw0_JqaYt5P4g9ggQwUDn9w" target="_blank"><i class="fab fa-youtube"></i></a></li>
+				<li><a href="https://www.instagram.com/kresna_agung11/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<header>
+		<div class="container">
+			<h1>LOGIN PAGE</h1>
+		</div>
+	</header>
+
+    <!--label-->
+    <section class="label">
+        <div class="container">
+            <p>Home / Login</p>
+        </div>
+    </section>
+
+    <!--Login-->
+    <div style="padding:30px;">
+    	<link rel="stylesheet" type="text/css" href="css/login_page.css">
+    	<center> <h1> Login Form </h1> </center>   
+    <form>  
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit" onclick="myFunction()">Login</button>   
+            <input type="checkbox" checked="checked"> Remember me   
+            <button type="button" class="cancelbtn"> Cancel</button>   
+            <a href="#" class="forgotpw" style=""> Forgot password? </a>   
+        </div>
+        <script>
+        	function myFunction() {
+        		confirm("Confirm")
+        	}
+        </script>
+    </form>
+    </div>
+
+	<!--footer-->
+	<footer>
+		<div class="container">
+			<small>Copyright &copy; 2021 - Agung Kresna. All Rights Reserved.</small>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".bg-loader").hide();
+		})
+	</script>
+
+</body>
+</html>

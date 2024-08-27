@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Agung Kresna</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<style>
+		.col-4 {
+			padding-bottom: 50px;
+			font-size: 25px;
+			font-family: sans-serif;
+		}
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+		td, th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+		tr:nth-child(even) {
+			background-color: #dddddd;
+		}
+		.game:hover, .game:active {
+			background-color: powderblue;
+		}
+		.game {
+			padding: 15px;
+		}
+	</style>
+</head>
+<body>
+	<!--loader-->
+	<div class="bg-loader">
+		<div class="loader"></div>
+	</div>
+
+	<!-- header -->
+	<div class="medsos">
+		<div class="container">
+			<ul>
+				<li><a href="https://www.facebook.com/ajunk.kresna/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCw0_JqaYt5P4g9ggQwUDn9w" target="_blank"><i class="fab fa-youtube"></i></a></li>
+				<li><a href="https://www.instagram.com/kresna_agung11/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<header>
+		<div class="container">
+			<h1>Game Menu</h1>
+		</div>
+	</header>
+
+    <!--label-->
+    <section class="label">
+        <div class="container">
+            <p>Game / Menu</p>
+        </div>
+    </section>
+    <br>
+
+    <!--game-->
+    	<div class="col-4">
+    		<table>
+    			<tr>
+    				
+    				<th>Game</th>
+    				<th>Launch Date</th>
+    				<th>Publisher</th>
+    			</tr>
+    			<tr>
+    				<td><div class="game"><a href="Game/snakegame.html">Snake!!</a></div></td>
+    				<td>03 May 2021</td>
+    				<td>Agungdev.Ltd</td>
+    			</tr>
+    			<tr>
+    				<td><div class="game"><a href="Game/flappybox.html">Flappy Box</a></div></td>
+    				<td>10 May 2021</td>
+    				<td>Agungdev.Ltd</td>
+    			</tr>
+    		</table>
+		</div>
+	<!--footer-->
+	<footer>
+		<div class="container">
+			<small>Copyright &copy; 2021 - Agung Kresna. All Rights Reserved.</small>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".bg-loader").hide();
+		})
+	</script>
+
+</body>
+</html>
